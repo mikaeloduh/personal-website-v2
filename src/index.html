@@ -11,6 +11,7 @@
   <title>Personal Website v2</title>
 
   <link href="css/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />-->
   <link href="css/style.css" type="text/css" rel="stylesheet" />
@@ -22,27 +23,27 @@
 
   <header id="header">
     <div class="container">
-        <div class="name">
-          <h1>Michael Duh</h1>
-        </div>
-        <div class="navigator">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Portfolio</a>
-          <a href="">Contacts</a>
-        </div>
+      <div class="name">
+        <h2>Michael Duh</h2>
       </div>
-  </header>
+      <div class="navigator">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Portfolio</a>
+        <a href="">Contacts</a>
+      </div>
+    </div>
+  </header><!--header-->
 
   <div id="banner">
     <div class="container">
-      <h2>Hi, this is Michael</h2>
+      <h1>Hi, this is Michael</h1>
       <p>Neque porro quisquam est qui dolorem ipsum quia dolort</p>
       <a href="" class="hyperButton">Learn More About Me</a>
     </div>
-  </div>
+  </div><!--banner-->
 
-  <div id="about">
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="left col-xs-12 col-sm-4 col-md-3 col-lg-3 col-xl-6">
@@ -56,41 +57,73 @@
       </div>
     </div>
 
-  </div>
+  </section><!--about-->
 
-  <div id="portfolio">
+  <section id="about2">
     <div class="container">
       <header>
-        <h4>PORTFOLIO</h4>
+        <h4>I am What I Do</h4>
+      </header>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4"><span class="fa fa-html5"></span><h5>Web Development</h5></div>
+        <div class="col-xs-12 col-sm-4 col-md-4"><span class="fa fa-eye"></span><h5>Computer Vision</h5></div>
+        <div class="col-xs-12 col-sm-4 col-md-4"><span class="fa fa-code"></span><h5>OO Programming</h5></div>
+      </div>
+    </div>
+  </section><!--about2-->
+
+
+  <section id="portfolio">
+    <div class="container">
+      <header>
+        <h4>Portfolio</h4>
       </header>
 
       <div class="portfolios row">
-        <a href="" class="item col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <section class="item col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="left img-responsive">
             <img src="img/p2.jpg" alt="" >
           </div>
           <span class="right">
-            <h5>The First Stuff</h5>
-            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu. sit amet consequat lorem quam in metus. Nam facilisis diam vitae justo fringilla rhoncus congue quis mi. </p>
-          </span>
-          <div class="popup">
-            <h5>Technologies Used: </h5>
-            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>jQuery</span><span>Bootstrap 3</span>
-          </div>
-        </a>
-        <a href="" class="item col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <span>
+              <h5>The First Stuff</h5>
+              <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu. sit amet consequat lorem quam in metus. Nam facilisis diam vitae justo fringilla rhoncus congue quis mi. </p>
+            </span>
+            <span  class="popup">
+              <h5>Technologies Used: </h5>
+              <ul class="tags">
+                <li class="tag">HTML5</li>
+                <li class="tag">CSS3</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">jQuery</li>
+                <li class="tag">Bootstrap 3</li>
+              </ul>
+              <a href="#" class="fa fa-link">View Project</a>
+            </span>
+        </section>
+        <section class="item col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="left img-responsive">
             <img src="img/p1.jpg" alt="" >
           </div>
           <span class="right">
-            <h5>The Second Stuff</h5>
-            <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu. sit amet consequat lorem quam in metus. Nam facilisis diam vitae justo fringilla rhoncus congue quis mi. </p>
+            <span>
+              <h5>The Second Stuff</h5>
+              <p>Duis neque nisi, dapibus sed mattis et quis, nibh. Sed et dapibus nisl amet mattis, sed a rutrum accumsan sed. Suspendisse eu. sit amet consequat lorem quam in metus. Nam facilisis diam vitae justo fringilla rhoncus congue quis mi. </p>
+            </span>
+            <span  class="popup">
+              <h5>Technologies Used: </h5>
+              <ul class="tags">
+                <li class="tag">HTML5</li>
+                <li class="tag">CSS3</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">jQuery</li>
+                <li class="tag">Bootstrap 3</li>
+              </ul>
+              <a href="#" class="fa fa-link">View Project</a>
+            </span>
           </span>
-          <span  class="popup">
-            <h5>Technologies Used: </h5>
-            <span>html</span><span>CSS</span><span>JavaScript</span><span>jQuery</span>
-          </span>
-        </a>
+
+        </section>
         <a href="" class="item col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="left img-responsive">
             <img src="img/p3.jpg" alt="" >
@@ -111,30 +144,29 @@
         </a>
       </div>
       <a href="" class="hyperButton">See More Portfolio</a>
-
     </div>
-  </div>
+  </section><!--portfolio-->
 
-  <div id="contact">
+  <section id="contact">
     <div class="container">
-      <header><h4>Like What You See?</h4></header>
+      <header><h4>Want To Say Something?</h4></header>
       <a href="" class="hyperButton">Send Me a Message</a>
     </div>
-  </div>
+  </section>
 
-  <div id="footer">
+  <footer id="footer">
     <div class="container">
       <ul class="icons">
-        <li><a href="#" class="icon fa fa-linkedin"></a></li>
-  			<li><a href="#" class="icon fa fa-github"></a></li>
-        <li><a href="#" class="icon fa fa-twitter"></a></li>
-  			<li><a href="#" class="icon fa fa-facebook"></a></li>
+        <li><a href="https://www.linkedin.com/in/michaelduh" target="_blank" class="icon fa fa-linkedin"></a></li>
+  			<li><a href="https://github.com/mikaeloduh" target="_blank" class="icon fa fa-github"></a></li>
+        <li><a href="http://codepen.io/mikaeloduh" target="_blank" class="icon fa fa-codepen"></a></li>
+  			<li><a href="https://www.freecodecamp.com/mikaeloduh" target="_blank" class="icon fa fa-free-code-camp"></a></li>
   		</ul>
       <div>Copyright © 2017 Michael Duh All Rights Reserved</div>
     </div>
-  </div>
+  </footer><!--footer-->
 
-
+  <!--script-->
   <script src="js/jquery-3.2.1/jquery-3.2.1.min.js" language="javascript" type="text/javascript" ></script>
   <script src="js/bootstrap-3.3.7/bootstrap.min.js" language="javascript" type="text/javascript"></script>
   <script src="js/main.js" language="javascript" type="text/javascript" ></script>
