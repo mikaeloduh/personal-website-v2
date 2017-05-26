@@ -30,7 +30,7 @@
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Portfolio</a>
-        <a href="">Contacts</a>
+        <a href="">Contact</a>
       </div>
     </div>
   </header><!--header-->
@@ -150,14 +150,59 @@
   <section id="contact">
     <div class="container">
       <header><h4>Want To Say Something?</h4></header>
-      <a href="" class="hyperButton">Send Me a Message</a>
+      
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="hyperButton" data-toggle="modal" data-target="#sendMsgModal">Send Me a Message</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="sendMsgModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h5 class="modal-title">Send Me a Message</h5>
+            </div>
+
+              <div class="modal-body">
+                <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+                  <div class="form-group">
+                    <label class="control-label col-md-4" for="name">Your Name</label>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-4" for="email">Email Address</label>
+                    <div class="col-md-6">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-md-4" for="comments">Message</label>
+                    <div class="col-md-6">
+                      <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your message here..."></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" value="Submit" class="btn btn-custom" id="submit">Send</button>
+                    <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </section>
 
   <footer id="footer">
     <div class="container">
       <ul class="icons">
-        <li><a href="https://www.linkedin.com/in/michaelduh" target="_blank" class="icon fa fa-linkedin"></a></li>
+        <li><a href="https://www.linkedin.com/in/michaelduh" target="_blank" class="icon fa fa-linkedin-square"></a></li>
   			<li><a href="https://github.com/mikaeloduh" target="_blank" class="icon fa fa-github"></a></li>
         <li><a href="http://codepen.io/mikaeloduh" target="_blank" class="icon fa fa-codepen"></a></li>
   			<li><a href="https://www.freecodecamp.com/mikaeloduh" target="_blank" class="icon fa fa-free-code-camp"></a></li>

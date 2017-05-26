@@ -8,6 +8,6 @@ $(document).ready(function() {
       press(0);
   });
 
-  
+
 
 });

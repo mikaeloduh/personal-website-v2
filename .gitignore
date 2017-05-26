@@ -91,3 +91,6 @@ typings/
 
 # gulp Server
 /server
+
+# Heroku
+composer.json
