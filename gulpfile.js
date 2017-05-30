@@ -14,8 +14,9 @@ gulp.task('connect', function() {
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: ['src', 'path']
-    }
+      baseDir: 'src'
+    },
+    startPath: "/index.html"
   });
 });
 
@@ -39,7 +40,7 @@ gulp.task('js', function () {
 });
 
 gulp.task('php', function () {
-  gulp.src('./src/*.php')
+  gulp.src('**/*.php')
     // .pipe(connect.reload());
     .pipe(browserSync.reload({stream:true}))
 });
@@ -48,7 +49,7 @@ gulp.task('watch', function () {
   gulp.watch(['./src/*.html'], ['html']);
   gulp.watch(['./src/css/*.css'], ['css']);
   gulp.watch(['./src/js/*.js'], ['js']);
-  gulp.watch(['./src/*.php'], ['php']);
+  gulp.watch(['**/*.php'], ['php']);
 });
 
 
