@@ -285,6 +285,7 @@ a {
   margin-top: 50px;
   width: 100%;
 }
+
 #portfolio .portfolios::after {
     content: "";
     display: table;
@@ -297,11 +298,11 @@ a {
   min-height: 25px;
   margin: 0;
   padding: 0;
-
   text-decoration: none;
   color: #f2f2f0;
 }
-#portfolio .item .left {
+
+#portfolio .left {
   position: relative;
   display: inline-block;
   float: left;
@@ -309,7 +310,8 @@ a {
   padding-top: 25%;
   width: calc(30% - 20px);
 }
-#portfolio .item .left img {
+
+#portfolio .left img {
   position: absolute;
   left: 0;
   top: 0;
@@ -318,28 +320,38 @@ a {
   object-fit: cover;
   border-radius: 6px;
 }
-#portfolio .item .right {
+
+#portfolio .right {
   display: inline-block;
   position: relative;
   float: left;
   margin: 10px;
   text-align: left;
   width: calc(70% - 20px);
-
 }
-#portfolio .item .right span:first-child {
 
+#portfolio .description {
+  display: inline-block;
+  position: relative;
+  height: 210px;
+  opacity: 1.0;
   transition: .5s;
 }
-#portfolio .item h5 {
+
+#portfolio .right:hover .description{
+  opacity: 0.1;
+}
+
+#portfolio .right h5 {
   text-align: left;
   margin-top: 0;
 }
-#portfolio .item p {
+
+#portfolio .right p {
   margin-top: 25px;
-  padding-bottom: 40px;
   font-size: 16px;
 }
+
 #portfolio .item .popup {
   display: inline-block;
   position: absolute;
@@ -348,11 +360,17 @@ a {
   width: 100%;
   height: 100%;
   padding-left: 0;
+  float: left;
   color: white;
   text-shadow: 1px 1px 10px #11bfae;
   opacity: 0;
   transition: .5s;
+  /*background-color: #395160;*/
 }
+#portfolio .right:hover .popup{
+  opacity: 1;
+}
+
 #portfolio .item .popup ul {
   margin: 0;
   padding: 0;
@@ -361,7 +379,7 @@ a {
 #portfolio .item .popup .tag{
   display: inline-block;
   position: relative;
-  float: left;
+
   margin: 5px 10px 5px 0px;
   padding: 0px 4px;
   color: #f2f2f0;
@@ -372,23 +390,18 @@ a {
   text-align: left;
   font-size: 12px;
 }
-#portfolio .right a {
-  margin-top: 60px;
+
+#portfolio .popup a {
+  position: relative;
+  margin-top: 40px;
   padding: 10px 30px;
   border: 1px solid #f2f2f0;
   border-radius: 3px;
   text-decoration: none;
   color: #f2f2f0;
 }
-#portfolio .right a {
-  background-color:
-}
-#portfolio .item .right:hover span:first-child {
-  opacity: .1;
-}
-#portfolio .item .right:hover span:last-child {
-  opacity: 1.0;
-}
+
+
 
 @media (max-width: 520px) {
   #portfolio .item .left {
