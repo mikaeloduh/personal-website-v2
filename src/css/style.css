@@ -45,6 +45,25 @@ a {
   color: inherit;
   z-index: 2;
 }
+
+#header .navbar-custom {
+  background-color: RGBA(75, 74, 89, .30);
+  color: inherit;
+  z-index: 2;
+}
+#header .navbar-header {
+  float: left;
+  padding-left: 30px;
+}
+#header .navbar-brand {
+  padding: 8px 0;
+  line-height: 20px;
+  font-size: 20px;
+}
+#header .navbar-nav {
+
+}
+
 #header .container {
   position: relative;
   display: block;
@@ -64,8 +83,10 @@ a {
 #header .container .navigator {
   display: inline-block;
 }
-#header a {
+#header a,
+#header button {
   display: inline-block;
+  background-color: inherit;
   line-height: 15px;
   font-size: 15px;
   text-decoration: none;
