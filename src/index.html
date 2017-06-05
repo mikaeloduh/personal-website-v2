@@ -7,15 +7,13 @@
   <meta http-equiv="Content-Language" content="zh-tw" />
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
-
   <title>Personal Website v2</title>
 
-  <link href="css/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />
-   <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />-->
+  <!--<link href="css/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="css/style.css" type="text/css" rel="stylesheet" />
-
 </head>
 
 
@@ -36,22 +34,27 @@
   </header>--><!-- /.header -->
 
 
-<nav id="header" class="navbar navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#top"><h2>Michael Duh</h2></a>
-    </div>
+  <nav id="header" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#banner">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#sendMsgModal">Contact</button></li>
-      </ul>
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a class="navbar-brand" href="#banner">Michael Duh</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#sendMsgModal">Contact</button></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <div id="banner">
     <div class="container">
@@ -68,7 +71,7 @@
           <img src="/img/avatar.jpg" class="img-responsive img-circle" alt="avatar">
         </div>
         <div class="right col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-6">
-          <h3>Donec eget ante magna</h3>
+          <h3>Hello stranger. Nice to meet you</h3>
           <p>I spent a long time searching my passion in my life. Electrical Engineering and Computer Science school built me into a diversified experience engineer, from hardware to software, from low-level system control programming to web development. </p>
           <p>Recently I finished freeCodeCamp Front-end Development Certification, I am very comfortable in web development. In all of these years, I motivated myself to keep up with new technology and sharpen my coding skills. My learning journey never ends.</p>
         </div>

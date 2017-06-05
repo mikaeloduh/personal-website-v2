@@ -36,29 +36,26 @@ a {
 }
 /* header header header header header header */
 #header {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: inline-block;
   width: 100%;
+  padding: 0 30px;
   background-color: RGBA(75, 74, 89, .30);
   color: inherit;
   z-index: 2;
+}
+#header .navbar-toggle {
+  border-color: RGBA(242, 242, 240, 1.00);
+
+}
+#header .icon-bar {
+  background-color: RGBA(242, 242, 240, 1.00);
+}
+#header .glyphicon-menu-hamburger {
+  color: RGBA(242, 242, 240, 1.00);
 }
 
-#header .navbar-custom {
-  background-color: RGBA(75, 74, 89, .30);
-  color: inherit;
-  z-index: 2;
-}
-#header .navbar-header {
-  float: left;
-  padding-left: 30px;
-}
 #header .navbar-brand {
-  padding: 8px 0;
-  line-height: 20px;
-  font-size: 20px;
+  font-size: 22px;
 }
 #header .navbar-nav {
 
@@ -75,28 +72,34 @@ a {
   float: left;
   padding-left: 30px;
 }
-#header h2 {
-  padding: 8px 0;
-  line-height: 20px;
-  font-size: 20px;
-}
+
 #header .container .navigator {
   display: inline-block;
 }
 #header a,
 #header button {
-  display: inline-block;
   background-color: inherit;
-  line-height: 15px;
-  font-size: 15px;
+
   text-decoration: none;
-  color: RGBA(255, 255, 255, 1.00);
+  color: RGBA(242, 242, 240, 1.00);
   transition: background-color .3s;
 }
 #header a:hover {
   background-color: RGBA(255,	255,	255,	0.2);
   color: white;
 }
+#header button:hover {
+  border: 1px solid white;
+  background-color: RGBA(255,	255,	255,	0.2);
+}
+
+@media (max-width: 767px) {
+  #header {
+    padding: 0;
+  }
+
+}
+/*
 @media (max-width: 363px) {
   #header .container a {
     padding: 6px 10px;
@@ -124,7 +127,7 @@ a {
     padding-right: 30px;
   }
 }
-
+*/
 /* banner banner banner banner banner banner */
 #banner {
   position: relative;
@@ -374,7 +377,7 @@ a {
 }
 
 #portfolio .item .popup {
-  display: inline-block;
+  display: none;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -382,13 +385,14 @@ a {
   height: 100%;
   padding-left: 0;
   float: left;
-  color: white;
+  color: RGBA(255,	255,	255,	1);
   text-shadow: 1px 1px 10px #11bfae;
   opacity: 0;
   transition: .5s;
   /*background-color: #395160;*/
 }
 #portfolio .right:hover .popup{
+  display:inline-block;
   opacity: 1;
 }
 
@@ -401,7 +405,7 @@ a {
   display: inline-block;
   position: relative;
 
-  margin: 5px 10px 5px 0px;
+  margin: 5px 0px 5px 0px;
   padding: 0px 4px;
   color: #f2f2f0;
   background-color: #ff5200;
@@ -420,16 +424,17 @@ a {
   border-radius: 3px;
   text-decoration: none;
   color: #f2f2f0;
+  text-align: center;
 }
 
 
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
   #portfolio .item .left {
     margin: 0px 5px 0px 0px;
     width: calc(30% - 5px);
   }
-  #portfolio .item span:nth-child(1) {
+  #portfolio .item .right {
     margin: 0px 0px 0px 5px;
     width: calc(70% - 5px) ;
   }
@@ -441,6 +446,12 @@ a {
     margin-top: 15px;
     padding-bottom: 20px;
     font-size: 14px;
+  }
+
+  #portfolio .popup a {
+    margin-top: 10px;
+    width: 180px;
+
   }
 }
 

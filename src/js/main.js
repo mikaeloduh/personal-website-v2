@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   $('body').scrollspy({target: ".navbar", offset: 50});
 
-  $("#myNavbar a").on('click', function(event) {
+  $("#myNavbar a, .navbar-brand").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
