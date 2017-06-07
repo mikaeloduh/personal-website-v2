@@ -87,10 +87,17 @@ typings/
 .env
 
 
-# End of https://www.gitignore.io/api/node,macos
-
 # gulp Server
-/server
+server/
+gulpfile.js
+config.json
+package.json
 
 # Heroku
 composer.json
+composer.lock
+index.php
+send_form_email.php
+
+# phpmailer
+vendor/

@@ -2,15 +2,10 @@
 
 $(document).ready(function() {
   console.log("Hello, world!");
-  // Play buttons //
-  $(".box0").on("mousedown", function() {
-    if (onOff === 1 && !playing)
-      press(0);
-  });
 
-  $('body').scrollspy({target: ".navbar", offset: 50});
 
-  $("#myNavbar a, .navbar-brand").on('click', function(event) {
+
+  $("#myNavbar a, .navbar-brand, #banner a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -28,6 +23,6 @@ $(document).ready(function() {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    }  // End if
+    }
   });
 });
