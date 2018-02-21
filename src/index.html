@@ -1,61 +1,53 @@
+<!--
+  Michael Duh's Personal Website v2
 
+  Technologies Used: HTML, CSS, JavaScript, PHP, jQuery, Bootstrap
+  Development Tools: Node.js/Gulp, MAMP, Composer, Git, Atom, Friefox Developer Tools
+
+  Author: Michael Duh
+  First Deploy: May 26 2017
+  Revision:     Feb 21 2018
+-->
 
 <!DOCTYPE html>
-<html lang="tw">
+<html lang="en">
 
 <head>
-  <meta http-equiv="Content-Language" content="zh-tw" />
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
-  <title>Personal Website v2</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"/>
+  <title>Personal Website</title>
 
-  <!--<link href="css/bootstrap-3.3.7/bootstrap.min.css" rel="stylesheet" />-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet"/>
 </head>
 
-
-<body>
-  <!--
-  <header id="">
-    <div class="container">
-      <div class="name">
-        <h2>Michael Duh</h2>
-      </div>
-      <div class="navigator">
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </header>--><!-- /.header -->
-
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- header -->
   <nav id="header" class="navbar navbar-fixed-top navbar-custom">
     <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-
-          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#banner">Michael Duh</a>
+        <a class="navbar-brand" href="#">Michael Duh</a>
       </div>
-      <div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#sendMsgModal">Contact</button></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#banner">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#sendMsgModal">Contact</button></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav><!-- /#header -->
 
   <div id="banner">
     <div class="container">
@@ -64,7 +56,7 @@
 
       <a href="#about" class="hyperButton">Learn More About Me</a>
     </div>
-  </div><!-- /.banner -->
+  </div><!-- /#banner -->
 
   <section id="about">
     <div class="container">
@@ -74,13 +66,13 @@
         </div>
         <div class="right col-xs-12 col-sm-8 col-md-9 col-lg-9 col-xl-6">
           <h3>Greatness from small beginnings</h3>
-          <p>I spent a long time searching my passion in my life. Electrical Engineering and Computer Science school built me into a diversified experience engineer, from hardware to software, from low-level system control programming to web development. </p>
-          <p>Recently I finished freeCodeCamp Front-end Development Certification, I am very comfortable in web development. In all of these years, I motivated myself to keep up with new technology and sharpen my coding skills. My learning journey never ends.</p>
+          <p>I spent a long time searching for my passion in my life. The Electrical Engineering and Computer Science school built me into a diversified experience engineer, from hardware to software, from low-level system control programming to web development.</p>
+          <p>Recently I finished freeCodeCamp Front-end Development Certification. I am very comfortable in web development. Through all of these years, I motivated myself to keep up with new technology and sharpen my coding skills. My learning journey never ends.</p>
         </div>
       </div>
     </div>
 
-  </section><!-- /.about -->
+  </section><!-- /#about -->
 
   <section id="about2">
     <div class="container">
@@ -93,7 +85,7 @@
         <div class="col-xs-12 col-sm-4 col-md-4"><span class="fa fa-code"></span><h5>OO Programming</h5></div>
       </div>
     </div>
-  </section><!-- /.about2 -->
+  </section><!-- /#about2 -->
 
   <!-- portfolio -->
   <section id="portfolio">
@@ -111,7 +103,7 @@
           <span class="right">
             <span class="description">
               <h5>Personal Website</h5>
-              <p>The first project after I finished freeCodeCamp Front End Program. This website used the skills I learned from freeCodeCamp. Hope you enjoy :-)</p>
+              <p>My first project after I finished freeCodeCamp Front End Program. This website used the skills I learned from freeCodeCamp. There’s just one goal and it all started from here, self-marketing myself. Click around and hope you enjoy :-)</p>
             </span>
             <span class="popup">
               <h5>Technologies Used: </h5>
@@ -136,7 +128,7 @@
           <span class="right">
             <div class="description">
               <h5>Kinect 3D Reconstruction System</h5>
-              <p>Research Project in NIU CS. A software to reconstruct 3D real-world spaces by using multiple infrared depth camera (Microsoft Kinect).</p>
+                <p>My research project at NIU CS: developed a 3D space reconstruction software which was powered by multiple Microsoft Kinect. I used the resources of Argonne Lab and shared ideas with the graduate student group.</p>
             </div>
             <span class="popup">
               <h5>Technologies Used: </h5>
@@ -161,7 +153,7 @@
           <span class="right">
             <div class="description">
               <h5>Cycle-time Estimating Utility</h5>
-              <p>A side project for my work. This utility can calculate machining cycle-time which helps production planning easier to estimate time cost and control the production.</p>
+              <p>This is a side project for my work. This utility can calculate machining cycle-time which helps production planning easier to estimate time cost and control the production.</p>
             </div>
             <span class="popup">
               <h5>Technologies Used: </h5>
@@ -184,7 +176,7 @@
           <span class="right">
             <div class="description">
               <h5>Vision-Based Tracking System</h5>
-              <p>My Masters research in Electrical Engineering. A vision-based object tracking system with algorithm program implementation and hardware integration</p>
+              <p>My Masters research in Electrical Engineering. A fast vision-based object tracking system with algorithm program implementation and hardware integration.</p>
             </div>
             <span class="popup">
               <h5>Technologies Used: </h5>
@@ -204,7 +196,7 @@
       </div>
       <a href="https://codepen.io/mikaeloduh/pens/public/" target="_blank" class="hyperButton">See More Portfolio</a>
     </div>
-  </section><!-- /.portfolio -->
+  </section><!-- /#portfolio -->
 
   <section id="contact">
     <div class="container">
@@ -215,62 +207,72 @@
 
       <!-- Modal -->
       <div id="sendMsgModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Contact Me</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Contact Me</h4>
             </div>
             <div class="modal-body">
-              <form class="form-horizontal" name="commentform" method="post" action="send_form_email.php">
+              <!-- Contact form -->
+              <form id="contact-form" class="form-horizontal" name="contact-form" role="form">
+                 <div id="alert-box" class="alert alert-dismissible fade" style="display: none" role="alert">
+                  <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <p></p>
+                </div>
                 <div class="form-group">
-                  <label class="control-label col-md-4" for="first_name">Name</label>
-                  <div class="col-md-6">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"/>
+                  <label class="control-label col-md-3" for="first_name">Name</label>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required/>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="control-label col-md-4" for="email">Email</label>
-                  <div class="col-md-6">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+                  <label class="control-label col-md-3" for="email">Email</label>
+                  <div class="col-md-9">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" data-error="Email address is invalid" required/>
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="control-label col-md-4" for="comment">Message</label>
-                  <div class="col-md-6">
-                    <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+                  <label class="control-label col-md-3" for="comment">Message</label>
+                  <div class="col-md-9">
+                    <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here" data-error="Forgot something to say?" required></textarea>
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
-              </form>
-              <div class="modal-footer">
-                <button type="submit" value="Submit" class="btn btn-custom pull-right">Send</button>
-              </div>
-            </div><!-- /body -->
-          </div><!-- /content -->
-        </div><!-- /dialog -->
-      </div><!-- /Modal -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-custom" data-dismiss="modal">Cancel</button>
+                  <button id="sendButton" class="btn btn-custom" type="submit" name="submit">Send Message</button>
+                </div>
+              </form><!-- /#contact-form -->
+            </div><!-- /.modal-body -->
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /#sendMsgModal -->
 
     </div>
-  </section>
+  </section><!-- #contact -->
 
   <footer id="footer">
     <div class="container">
       <ul class="icons">
-        <li><a href="https://www.linkedin.com/in/michaelduh" target="_blank" class="icon fa fa-linkedin-square"></a></li>
-  			<li><a href="https://github.com/mikaeloduh" target="_blank" class="icon fa fa-github"></a></li>
-        <li><a href="http://codepen.io/mikaeloduh" target="_blank" class="icon fa fa-codepen"></a></li>
-  			<li><a href="https://www.freecodecamp.com/mikaeloduh" target="_blank" class="icon fa fa-free-code-camp"></a></li>
-  		</ul>
-      <div>Copyright © 2017 Michael Duh All Rights Reserved</div>
+        <li><a href="https://www.linkedin.com/in/michaelduh"  target="_blank" class="icon fa fa-linkedin-squar" style="font-size: 43px" aria-hidden="true"></a></li>
+        <li><a href="https://github.com/mikaeloduh"           target="_blank" class="icon fa fa-github" style="font-size: 44px" aria-hidden="true"></a></li>
+        <li><a href="https://codepen.io/mikaeloduh"           target="_blank" class="icon fa fa-codepen" aria-hidden="true"></a></li>
+        <li><a href="https://www.freecodecamp.com/mikaeloduh" target="_blank" class="icon fa fa-free-code-camp" aria-hidden="true"></a></li>
+      </ul>
+      <div>Copyright © 2018 Michael Duh All Rights Reserved</div>
     </div>
-  </footer><!--footer-->
+  </footer><!-- /#footer -->
 
   <!--script-->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" language="javascript" type="text/javascript" ></script>
   <script src="js/main.js" language="javascript" type="text/javascript" ></script>
-  <script src="js/contact.js" language="javascript" type="text/javascript" ></script>
-
+  <!-- google-analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

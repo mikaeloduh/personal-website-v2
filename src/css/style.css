@@ -13,7 +13,7 @@ body {
   font-weight: 200;
   letter-spacing: .9px;
 
-  color: RGBA(242, 242, 240, 1.00);
+  color: rgba(242, 242, 240, 1.00);
 }
 h1 {
   font-weight: 400;
@@ -34,31 +34,29 @@ a {
   font-weight: 300;
   font-size: 15px;
 }
-/* header header header header header header */
+
+/********************************************/
+/*                  HEADER                  */
+/********************************************/
 #header {
   display: inline-block;
   width: 100%;
   padding: 0 30px;
-  background-color: RGBA(55, 54, 69, .70);
+  background-color: rgba(55, 54, 69, .70);
   color: inherit;
   z-index: 2;
 }
 #header .navbar-toggle {
-  border-color: RGBA(242, 242, 240, 1.00);
+  border-color: rgba(242, 242, 240, 1.00);
 
 }
 #header .icon-bar {
-  background-color: RGBA(242, 242, 240, 1.00);
+  background-color: rgba(242, 242, 240, 1.00);
 }
-#header .glyphicon-menu-hamburger {
-  color: RGBA(242, 242, 240, 1.00);
-}
+
 
 #header .navbar-brand {
   font-size: 22px;
-}
-#header .navbar-nav {
-
 }
 
 #header .container {
@@ -81,21 +79,21 @@ a {
 #header button {
   background-color: inherit;
   text-decoration: none;
-  color: RGBA(242, 242, 240, 1.00);
+  color: rgba(242, 242, 240, 1.00);
   transition: background-color .3s;
 }
 #header a:focus,
 #header a:hover{
-  background-color: RGBA(255,	255,	255,	0.2);
+  background-color: rgba(255,	255,	255,	0.2);
 }
 
 #header button:hover {
   border: 1px solid white;
-  background-color: RGBA(255,	255,	255,	0.2);
+  background-color: rgba(255,	255,	255,	0.2);
 }
 
 #header .active > a {
-  background-color: RGBA(255,	255,	255,	0.2);
+  background-color: rgba(255,	255,	255,	0.2);
 }
 
 @media (max-width: 767px) {
@@ -104,36 +102,10 @@ a {
   }
 
 }
-/*
-@media (max-width: 363px) {
-  #header .container a {
-    padding: 6px 10px;
-  }
-}
-@media (min-width: 364px) {
-  #header .container a {
-    padding: 10px 15px;
-  }
-}
-@media (max-width: 539px) {
-  #header .name {
-    display: none;
-  }
-  #header .container .navigator {
-    position: relative;
 
-  }
-}
-@media (min-width: 540px) {
-  #header .container .navigator {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding-right: 30px;
-  }
-}
-*/
-/* banner banner banner banner banner banner */
+/********************************************/
+/*                 BANNER                   */
+/********************************************/
 #banner {
   position: relative;
   display: block;
@@ -189,7 +161,7 @@ a {
   line-height: 60px;
   color: white;
   text-decoration: none;
-  border: solid 1px RGBA(255,	255,	255,	1);
+  border: solid 1px rgba(255,	255,	255,	1);
   background-color: inherit;
   border-radius: 5px;
   transition: background-color .3s;
@@ -211,15 +183,17 @@ a {
 #banner .hyperButton:hover,
 #portfolio .hyperButton:hover,
 #contact .hyperButton:hover {
-  background-color: RGBA(255,	255,	255,	0.2);
+  background-color: rgba(255,	255,	255,	0.2);
 }
 
-/* ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT */
+/********************************************/
+/*                  ABOUT                   */
+/********************************************/
 #about {
   display: block;
   width: 100%;
   padding: 80px 0;
-  background: RGBA(27, 60, 89, 1.00);
+  background: rgba(27, 60, 89, 1.00);
 }
 #about .container {
   display: inline-block;
@@ -250,7 +224,9 @@ a {
   text-align: left;
 }
 
-/* ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 ABOUT2 */
+/********************************************/
+/*                  ABOUT2                  */
+/********************************************/
 #about2 {
   display: inline-block;
   position: relative;
@@ -290,7 +266,9 @@ a {
 }
 
 
-/* Portfolio Portfolio Portfolio Portfolio Portfolio */
+/********************************************/
+/*                PORTFPLIO                 */
+/********************************************/
 #portfolio {
   display: inline-block;
   position: relative;
@@ -397,7 +375,7 @@ a {
   transition:  .5s;
 }
 #portfolio .right:hover .popup,
-#portfolio .right:focus .popup{
+#portfolio .right:active .popup {
   visibility: visible;
   opacity: 100;
 }
@@ -440,8 +418,6 @@ a {
   font-size: 14px;
 }
 
-
-
 @media (max-width: 560px) {
   #portfolio .item .left {
     margin: 0px 5px 0px 0px;
@@ -468,7 +444,9 @@ a {
   }
 }
 
-
+/********************************************/
+/*                 CONTACT                  */
+/********************************************/
 #contact {
   display: block;
   position: relative;
@@ -499,16 +477,47 @@ a {
 #contact header h4 {
 
 }
+#contact .modal-header {
+  border: none;
+}
 #contact .modal-content {
   color: white;
   background-color: rgba(60,	64,	72, 1.0);
 }
-
+#contact .modal-body {
+  padding: 0 30px 30px 30px;
+}
 .input-group[class*="col-"] {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#contact .help-block {
+  text-align: left;
+}
+#contact .has-error .help-block,
+#contact .has-error .control-label {
+  color: #f71b43;
+  font-size: 14px;
+}
+#contact .modal-footer {
+  padding: 15px 0;
 }
 
+#contact .btn-custom {
+  color: white;
+  margin-left: 6px;
+  background-color: inherit;
+  border: 1px solid white;
+  transition: background-color .1s;
+}
+#contact .btn-custom:hover {
+  color: inherit;
+  background-color: rgba(255,	255,	255,	0.2);
+}
+
+/********************************************/
+/*                 FOOTER                   */
+/********************************************/
 #footer {
   background-color: rgba(40,	44,	52, 1.0);
   background-color: rgba(44,	62,	80, 1.0);
@@ -528,7 +537,7 @@ a {
   text-align: center;
   display: inline-block;
   position: relative;
-  padding: 10px;
+  padding: 10px 14px;
   list-style-type: none;
 }
 #footer .icons li .icon {
@@ -543,13 +552,7 @@ a {
 #footer div:last-child {
   color: rgba(180, 180, 180, 1.0);
 }
-.btn-custom {
-  color: white;
-  background-color: inherit;
-  border: 1px solid white;
-  transition: background-color .1s;
-}
-.btn-custom:hover {
-  color: inherit;
-  background-color: RGBA(255,	255,	255,	0.2);
+/* font-icon */
+.fa-linkedin-squar:before {
+  content: "\f08c";
 }
