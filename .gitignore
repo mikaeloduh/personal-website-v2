@@ -1,3 +1,10 @@
+# exclude: node,macos,composer
+
+### Composer ###
+composer.phar
+composer.lock
+/vendor/
+
 
 ### macOS ###
 *.DS_Store
@@ -86,18 +93,6 @@ typings/
 # dotenv environment variables file
 .env
 
-
-# gulp Server
-server/
-gulpfile.js
+# misc
 config.json
-package.json
-
-# Heroku
-composer.json
-composer.lock
-index.php
-send_form_email.php
-
-# phpmailer
-vendor/
+package-lock.json
